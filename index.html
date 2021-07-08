@@ -6,12 +6,12 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <title>ICME2024 | 15th International Congress on Mathematics Education | 7 July – 14 July 2024</title>
         <!-- Bootstrap CSS -->
-        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,900" rel="stylesheet">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="./style.css">
         <!-- Global site tag (gtag.js) - Google Analytics -->
         <script async src="https://www.googletagmanager.com/gtag/js?id=UA-128963342-28"></script>
         <script>
@@ -21,27 +21,17 @@
 
           gtag('config', 'UA-128963342-28');
         </script>
-        <style>
+        <!-- <style>
+          @font-face {
+            font-family: 'Hello Stockholm';
+            src: url('./fonts/HelloStockholm-Regular.ttf');
+          }
+          :root {
+            --
+          }
             body,
             html {
               height: 100vh;
-            }
-            .bg-image {
-              height: 100%;
-              background: url("./img/bg2.jpg") center center no-repeat;
-              background-size: cover;
-            }
-            .container {
-                position: absolute;
-                top: 0;
-                left: 50%;
-                transform: translateX(-50%);
-                z-index: 99;
-                height: 100%;
-
-            }
-            .container .row {
-                height: 100%;
             }
             .glass {
               background-color: hsla(0, 0%, 100%, 0.8);
@@ -54,8 +44,7 @@
             }
             h1 {
                 color: #006891;
-                font: 900 1.8em/1.2 'Montserrat', sans-serif;
-                text-transform: uppercase;
+                font: 10rem/1.2 'Hello Stockholm';
             }
             h1 span {
                 color: #EBA51A;
@@ -74,7 +63,13 @@
             p {
                 font: 1.2em/1.5 'Montserrat', sans-serif;
             }
-
+            .header {
+              background: linear-gradient(#a0a0a0, #FFF);
+              /* url('./img/pngegg.png') */
+              width: 100%;
+              background-size: cover;
+              background-repeat: no-repeat;
+            }
             .button {
               background-color: #003b52;
               color: white;
@@ -106,20 +101,64 @@
                   max-width: 100%;
                 }
             }
-        </style>
+        </style> -->
     </head>
     <body>
-      <div class="bg-image"></div>
-      <div class="container">
-        <div class="row align-items-end justify-content-center">
-          <div class="col-12 p-3 glass mb-4 text-center text-center">
-            <h1 class="mb-0">15th International Congress on Mathematics Education</h1>
-            <h2 class="mt-3 mb-0">ICC Sydney</h2>
-            <h3>7 - 14 July 2024</h3>
-            <a href="" class="button px-5 py-4 mt-3 d-inline-block text-center">Register your Expresion of Interest</a>
+      <div class="header">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 text-center p-5">
+              <h1 class="mb-5">See you Sydney!</h1>
+              <h2 class="mb-4">15th International Congress on Mathematics Education</h2>
+              <h3 class="mb-4">7 - 14 July 2024 • ICC Sydney</h3>
+              <h4>Sydney, where it all adds up</h4>
+            </div>
           </div>
         </div>
       </div>
+      <div class="eoi">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-12 text-center p-4">
+              <a href="https://icmsaust.eventsair.com/icme2024/expression-of-interest" target="_blank">REGISTER YOUR EXPRESSION OF INTEREST</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="collage">
+        <div class="container-fluid">
+          <div class="row" id="collage">
+          </div>
+        </div>
+      </div>
+      <div class="footer">
+        <div class="container">
+          <div class="row p-3 justify-content-center align-items-top align-items-md-center">
+            <div class="col-12 col-md-4 text-center">
+              <p><b>General Enquiries</b> <br> <a href="mailto:enquiries@icme15.com">enquiries@icme15.com</a></p>
+            </div>
+            <div class="col-6 col-md-4 text-center">
+              <p class="mb-0"><b>Hosted by:
+              <img src="https://via.placeholder.com/100" class="img-fluid ml-md-3 mt-3 mt-md-0 d-block d-md-inline mx-auto"></b></p>
+            </div>
+            <div class="col-6 col-md-4 text-center">
+              <p class="mb-0"><b>Event Management:
+              <a href="https://icmsaust.com.au/" target="_blank"><img src="http://www.icmsaust.com.au/wp-content/uploads/2021/02/icmsa55.png" width="150" class="img-fluid ml-md-3 mt-3 mt-md-0 d-block d-md-inline mx-auto"></a></b></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <script defer>
+        let images = [];
+        for (let i = 0; i < 36; i ++) {
+          images.push(`
+            <div class="col-3 col-sm-2 col-lg-1 p-0 tile ${i > 11 ? "d-none" : ""} ${(i > 11 & i < 18) ? "d-sm-block" : ""} d-md-block">
+              <img src="./img/tiles/${i+1}.jpg" class='img-fluid'/>
+            </div>
+          `);
+        }
+        document.getElementById('collage').innerHTML = images.join(``);
+      </script>
       <!-- Optional JavaScript -->
       <!-- jQuery first, then Popper.js, then Bootstrap JS -->
       <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
