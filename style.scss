@@ -70,5 +70,21 @@ h4 {
   p, a {
     color: $teal;
   }
+}
 
+@media (max-width: 768px) {
+  h1 {
+    font-size: 4rem;
+  }
+  h2 {
+    font-size: 2rem;
+  }
+  .eoi {
+    a {
+      font-family: 'Oswald', sans-serif;
+      font-family: 700;
+      font-size: 1.5rem;
+      color: white;
+    }
+  }
 }

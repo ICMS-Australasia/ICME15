@@ -57,4 +57,17 @@ h4 {
 .footer p, .footer a {
   color: #38A89C; }
 
+@media (max-width: 768px) {
+  h1 {
+    font-size: 4rem; }
+
+  h2 {
+    font-size: 2rem; }
+
+  .eoi a {
+    font-family: 'Oswald', sans-serif;
+    font-family: 700;
+    font-size: 1.5rem;
+    color: white; } }
+
 /*# sourceMappingURL=style.css.map */
