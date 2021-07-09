@@ -45,6 +45,8 @@ h4 {
     font-family: 700;
     font-size: 2rem;
     color: white; }
+  .eoi:hover {
+    background-color: #4fc4b8; }
 
 .collage .tile {
   overflow: hidden;
