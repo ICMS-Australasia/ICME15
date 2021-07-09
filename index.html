@@ -139,7 +139,7 @@
             </div>
             <div class="col-6 col-md-4 text-center">
               <p class="mb-0"><b>Hosted by:
-              <img src="https://via.placeholder.com/100" class="img-fluid ml-md-3 mt-3 mt-md-0 d-block d-md-inline mx-auto"></b></p>
+              <img src="./img/icmi.png" width="100" class="img-fluid ml-md-3 mt-3 mt-md-0 d-block d-md-inline mx-auto"></b></p>
             </div>
             <div class="col-6 col-md-4 text-center">
               <p class="mb-0"><b>Event Management:
@@ -150,9 +150,18 @@
       </div>
       <script defer>
         let images = [];
+        let animal = [2, 7, 11, 15, 32];
+        let animalDesc = [
+          "Big red kangaroos can hop 8m in a single bound",
+          "Koalas can sleep up to 18 hours a day",
+          "The heaviest wombat recorded was 38kg",
+          "There are 3 times more Kookaburra’s than people in Australia",
+          "Emus can grow up to 2m tall"
+        ]
         for (let i = 0; i < 36; i ++) {
           images.push(`
-            <div class="col-3 col-sm-2 col-lg-1 p-0 tile ${i > 11 ? "d-none" : ""} ${(i > 11 & i < 18) ? "d-sm-block" : ""} d-md-block">
+            <div class="col-3 col-sm-2 col-lg-1 p-0 tile ${i > 11 ? "d-none" : ""} ${(i > 11 & i < 18) ? "d-sm-block" : ""} ${animal.some(a => a == i) ? "animal" : "" } d-md-block">
+              ${animal.some(a => a == i) ? `<p>${animalDesc[animal.indexOf(i)]}</p>` : ""}
               <img src="./img/tiles/${i+1}.jpg" class='img-fluid'/>
             </div>
           `);
