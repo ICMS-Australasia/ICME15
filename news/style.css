@@ -1,0 +1,27 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,700,900&display=swap");
+@font-face {
+  font-family: 'Vag';
+  src: url("fonts/vag.TTF");
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #e4e4e4;
+}
+
+.button {
+  background-color: #38A89C;
+  color: white;
+  font-size: 20px;
+  border-radius: 10px;
+  text-decoration: none;
+}
+
+h1 {
+  color: #38A89C;
+}
+
+table {
+  background-color: white;
+}
+/*# sourceMappingURL=style.css.map */
