@@ -26,9 +26,9 @@ body {
 }
 
 h1{
-    color:white;
+    color:$teal;
     margin-top:0;
-    background-color: $teal;
+   
     margin-top: 30px;
     margin-bottom: 0;
     padding:10px;
@@ -62,12 +62,7 @@ h3{
 }
 
 
-#logo
-{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
+
 
 .qr{
     display:block;
@@ -85,3 +80,13 @@ h3{
 }
 
 
+td{
+    max-width: 600px;
+}
+
+#icmeLogo{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width:400px;
+}

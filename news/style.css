@@ -21,9 +21,8 @@ body {
 }
 
 h1 {
-  color: white;
+  color: #38A89C;
   margin-top: 0;
-  background-color: #38A89C;
   margin-top: 30px;
   margin-bottom: 0;
   padding: 10px;
@@ -55,12 +54,6 @@ h3 {
   margin: 0;
 }
 
-#logo {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-
 .qr {
   display: block;
   margin-left: auto;
@@ -72,5 +65,16 @@ h3 {
   background-color: white;
   color: #38A89C;
   padding: 0;
+}
+
+td {
+  max-width: 600px;
+}
+
+#icmeLogo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 400px;
 }
 /*# sourceMappingURL=style.css.map */
