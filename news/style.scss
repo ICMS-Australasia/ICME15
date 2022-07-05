@@ -6,7 +6,7 @@
 
 $teal: #38A89C;
 $grey:#5C5E5D;
-$red:#b71b22;
+$red:#941a1b;
 $blue: #deeaf6;
 
 body {
@@ -17,21 +17,21 @@ body {
 
 .button{
     background-color: #38A89C;
+    display: block;
     color:white;
     font-size: 20px;
     border-radius: 10px;
     text-decoration: none;
     padding:20px;
     margin-top:20px;
+    text-align: center;
 }
 
 h1{
     color:$teal;
     margin-top:0;
-   
-    margin-top: 30px;
     margin-bottom: 0;
-    padding:10px;
+    padding-left:10px;
     
 }
 
@@ -40,7 +40,8 @@ table{
 }
 
 .aoc{
-    background-color: $blue;
+    background-color: white;
+    padding:25px;
 }
 
 hr{
@@ -61,7 +62,10 @@ h3{
     margin:0;
 }
 
-
+h4{
+    margin-top: 0;
+    margin-bottom: 20px;
+}
 
 
 .qr{
@@ -73,12 +77,23 @@ h3{
 
 #footer{
     h2{
-        background-color: white;
+        background-color: #e4e4e4;
         color:$teal;
         padding:0;
     }
+    img{
+        margin-bottom: 20px;
+    }
+    background-color: #e4e4e4;
+    
+}
+#footer-td{
+    background-color:#e4e4e4 ;
 }
 
+#contact-heading{
+    margin:0;
+}
 
 td{
     max-width: 600px;
@@ -89,4 +104,31 @@ td{
     margin-left: auto;
     margin-right: auto;
     width:400px;
+}
+
+#details{
+    margin-top:0;
+}
+
+#details-p{
+    text-align: center;
+    margin-top: 0px;
+}
+
+
+#contents{
+    li{
+        a{
+            color:#941a1b;
+            text-decoration: none;
+        }
+    }
+}
+
+#sponsor-td{
+    background-color:#3d3d3d ;
+}
+
+#sponsors{
+    margin:0;
 }
