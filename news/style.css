@@ -110,16 +110,15 @@ td {
   margin-top: 0px;
 }
 
-#contents li a {
-  color: #941a1b;
-  text-decoration: none;
-}
-
 #sponsor-td {
   background-color: #3d3d3d;
 }
 
 #sponsors {
   margin: 0;
+}
+
+a {
+  color: #38A89C;
 }
 /*# sourceMappingURL=style.css.map */
