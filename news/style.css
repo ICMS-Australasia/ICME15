@@ -1,11 +1,9 @@
-@import url("https://fonts.googleapis.com/css?family=Roboto:400,700,900&display=swap");
-@font-face {
-  font-family: 'Vag';
-  src: url("fonts/vag.TTF");
+* {
+  font-family: Arial, "sans-serif";
 }
 
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: Arial, "sans-serif";
   background-color: #e4e4e4;
   color: #4c4c4c;
 }
@@ -18,8 +16,12 @@ body {
   border-radius: 10px;
   text-decoration: none;
   padding: 20px;
-  margin-top: 20px;
   text-align: center;
+}
+
+.button a {
+  color: white;
+  text-decoration: none;
 }
 
 h1 {
@@ -43,13 +45,13 @@ hr {
   margin-bottom: 20px;
 }
 
-h2 {
+.heading {
   color: white;
   background-color: #941a1b;
-  padding: 10px;
-  font-size: 22px;
+}
+
+h2 {
   margin: 0;
-  margin-bottom: 10px;
 }
 
 h3 {
