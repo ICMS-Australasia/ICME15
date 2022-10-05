@@ -12,6 +12,7 @@ body {
     font-family: Arial, "sans-serif";
     background-color: #e4e4e4;
     color:#4c4c4c;
+    line-height: 1.5;
 }
 
 .button{
@@ -30,21 +31,10 @@ body {
     }
 }
 
-h1{
-    color:$teal;
-    margin-top:0;
-    margin-bottom: 0;
-    padding-left:10px;
-    
-}
+
 
 table{
     background-color: white;
-}
-
-.aoc{
-    background-color: white;
-    padding:25px;
 }
 
 hr{
@@ -52,84 +42,23 @@ hr{
     margin-bottom:20px;
 }
 
-.heading{
-    color:white;
-    background-color: $red;
-   
-    
-}
-h2{
-    margin:0;
-}
-
-h3{
-    margin:0;
-}
-
-h4{
-    margin-top: 0;
-    margin-bottom: 20px;
-}
-
-
-.qr{
-    display:block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom:40px;
-}
-
-#footer{
-    h2{
-        background-color: #e4e4e4;
-        color:$teal;
-        padding:0;
-    }
-    img{
-        margin-bottom: 20px;
-    }
-    background-color: #e4e4e4;
-    
-}
-#footer-td{
-    background-color:#e4e4e4 ;
-}
-
-#contact-heading{
-    margin:0;
-}
-
-td{
-    max-width: 600px;
-}
-
-#icmeLogo{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width:400px;
-}
-
-#details{
-    margin-top:0;
-}
-
-#details-p{
-    text-align: center;
-    margin-top: 0px;
-}
-
-
-
-
-#sponsor-td{
-    background-color:#3d3d3d ;
-}
-
-#sponsors{
-    margin:0;
-}
-
 a{
     color:$teal;
+}
+
+.keydates{
+    border:1px #e4e4e4 solid;
+    th{
+        background: $red;
+        color:white;
+    }
+    td{
+        border:1px #e4e4e4 solid;
+        font-size: 14px;
+    }
+    tr:nth-child(even) {background-color: #eee;}
+    
+}
+.bio{
+    font-size: 15px;
 }
