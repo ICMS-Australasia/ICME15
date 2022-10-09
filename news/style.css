@@ -25,6 +25,26 @@ body {
   text-decoration: none;
 }
 
+.button-brown {
+  background-color: #921b1d;
+  display: block;
+  color: white;
+  font-size: 20px;
+  border-radius: 10px;
+  text-decoration: none;
+  padding: 20px;
+  text-align: center;
+}
+
+.button-brown a {
+  color: white;
+  text-decoration: none;
+}
+
+.green {
+  color: #38A89C;
+}
+
 table {
   background-color: white;
 }
@@ -35,7 +55,7 @@ hr {
 }
 
 a {
-  color: #38A89C;
+  color: #428bca;
 }
 
 .keydates {
