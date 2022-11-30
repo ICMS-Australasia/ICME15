@@ -9,6 +9,15 @@ body {
   line-height: 1.5;
 }
 
+.bdbt {
+  border-bottom: 1px solid #ccc;
+}
+
+.no-y-padding td {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
 .button {
   background-color: #38A89C;
   display: block;
